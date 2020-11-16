@@ -6,6 +6,15 @@ body{
     color:#ffffff;
 }
 
+.mancha{
+    position: absolute;
+    right: -1400px;
+    top: -600px;
+    height: auto;
+    display: inline-block;
+    z-index: -1;
+}
+
 .header {
     margin-top: 50px;
     margin-left: 20px;
@@ -54,6 +63,10 @@ body{
     color: #025157;
 }
 
+.actions a:hover{
+    text-decoration: underline;
+}
+
 .actions > *{
     margin-right: 10px;
 }
@@ -81,6 +94,10 @@ body{
     margin-right: 20px;
 }
 
+.mr-40{
+    margin-right: 40px;
+}
+
 .mr-60{
     margin-right: 60px;
 }
@@ -93,6 +110,10 @@ body{
     margin-top: 10px;
 }
 
+.mb-20{
+    margin-bottom: 20px;
+}
+
 .mb-40{
     margin-bottom: 40px;
 }
@@ -102,14 +123,11 @@ li{
     display: inline;
 }
 
-.text-main{
-    color: #025157;
-}
-
 .opaco{
     font-weight: 500;
     font-size: 14px;
     color: rgba(139, 139, 139,8);
+    line-height: 28px;
 }
 
 .uppercase{
@@ -143,7 +161,6 @@ main {
 .container-half{
     width: 50%;
     padding-left: 300px;
-    line-height: 1;
 }
 
 .vid__imgs--1{
@@ -206,15 +223,15 @@ main {
 }
 
 .play_btn:hover p{
-    text-decoration: underline;
+    text-decoration: underline green;
 }
 
-.title-intro{
+.title{
     font-size: 57px;
     font-weight: 700;
     font-family: vesterbroextrabold,Arial,sans-serif;
-    width: 336px;
     margin-bottom: 24px;
+    color: #025157;
 }
 
 .subtitle{
@@ -223,11 +240,45 @@ main {
     color: #46484c;
     font-family: 'IBM Plex Sans',Arial,sans-serif;
     margin-bottom: 30px;
+    line-height: 32px;
+}
+
+.medium-title{
+    font-size: 37px;
+    font-weight: 700;
+    font-family: vesterbroextrabold,Arial,sans-serif;
+    margin-bottom: 35px;
+    color: #025157;
+}
+
+.mini-title{
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #46484c;
+    white-space: nowrap;
+}
+
+.text-mini{
+    font-size: 15px;
+    color: #7e7e7e;
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-weight: 400;
 }
 
 .brands{
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.after-brands{
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cards{
@@ -237,7 +288,67 @@ main {
 }
 
 .card{
-    padding: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
+.card_img{
+    height: auto;
+    width: auto;
+    border-radius: 9px;
+    border: 1px solid #dadada;
+    margin-bottom: 30px;
+}
+
+.container-cards{
+    margin-top: 200px;
+}
+
+.border{
+    border: 1px solid #dadada;
+}
+
+.card-size{
+    height: 230px;
+    width: 270px;
+    padding: 40px 18px;
+}
+
+.icon-container{
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #46484c;
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    line-height: 32px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+
+.product-feature-img {
+    max-width: 38px;
+    height: auto;
+}
+
+.carousel-container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
 }
 
 .grid_container{
